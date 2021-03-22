@@ -79,7 +79,7 @@ public class areaXML {
                 if (node.getNodeType() == Node.ELEMENT_NODE) {
                     Element element = (Element) node;
                     String list1[] = (element.getElementsByTagName("dttmShowStart").item(0).getTextContent()).split("T");
-                    stringBuilder.append(element.getElementsByTagName("Title").item(0).getTextContent() + "\nKesto : "+ element.getElementsByTagName("LengthInMinutes").item(0).getTextContent() + "min" + "\nEsityksen aloitus klo: " + list1[1] + "\n\n");
+                    stringBuilder.append(element.getElementsByTagName("Title").item(0).getTextContent() + "\nSali: " + element.getElementsByTagName("TheatreAuditorium").item(0).getTextContent() + "\nKesto : "+ element.getElementsByTagName("LengthInMinutes").item(0).getTextContent() + "min" + "\nEsityksen aloitus klo: " + list1[1] + "\n\n");
                     }
                 }
         } catch (ParserConfigurationException e) {
