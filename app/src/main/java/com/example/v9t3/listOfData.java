@@ -9,12 +9,6 @@ public class listOfData {
         arrayList.add(x);
     }
 
-    public void print(){
-        for (data x : arrayList) {
-            System.out.println(x.id + " " + x.name);
-        }
-    }
-
     public int getLength(){
         return arrayList.size();
     }

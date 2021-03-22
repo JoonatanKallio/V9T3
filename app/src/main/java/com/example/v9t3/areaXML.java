@@ -48,10 +48,6 @@ public class areaXML {
                 data2[i] = list.getName(i);
             }
 
-            for (int i = 0; i < data2.length; i++) {
-                System.out.println(i + ": " + data2[i] + " ");
-            }
-
         } catch (ParserConfigurationException e) {
             e.printStackTrace();
         } catch (IOException e) {
